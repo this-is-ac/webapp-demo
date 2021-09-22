@@ -2,7 +2,7 @@ numpy
 pandas
 streamlit>=0.88
 streamlit-drawable-canvas>=0.8
-opencv-headless
+opencv-python-headless
 svgpathtools
 svgwrite
 Pillow
