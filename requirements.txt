@@ -1,0 +1,16 @@
+numpy
+pandas
+streamlit
+streamlit-drawable-canvas
+svgpathtools
+svgwrite
+Pillow
+matplotlib
+scipy
+Shapely
+circle-fit
+lsq-ellipse
+scikit-image
+keras
+opencv-python-headless
+tensorflow-cpu
