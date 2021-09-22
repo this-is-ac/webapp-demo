@@ -2,6 +2,8 @@ numpy
 pandas
 streamlit>=0.88
 streamlit-drawable-canvas>=0.8
+opencv-contrib-python==4.5.2.52
+opencv-python==4.5.2.52
 svgpathtools
 svgwrite
 Pillow
@@ -12,5 +14,4 @@ circle-fit
 lsq-ellipse
 scikit-image
 keras
-opencv-python
 tensorflow-cpu
