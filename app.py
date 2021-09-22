@@ -158,16 +158,16 @@ def full_app(session_state):
         key="full_app",
     )
     
-    if canvas_result.image_data is not None:
-        with open('Image.pickle', 'wb') as handle:
-            pickle.dump(canvas_result.image_data, handle)
+#     if canvas_result.image_data is not None:
+#         with open('Image.pickle', 'wb') as handle:
+#             pickle.dump(canvas_result.image_data, handle)
     if canvas_result.json_data is not None:
         objects = pd.json_normalize(canvas_result.json_data["objects"])
         for col in objects.select_dtypes(include=['object']).columns:
                 objects[col] = objects[col].astype("str")
         st.dataframe(objects)
-        with open('Data.pickle', 'wb') as handle:
-            pickle.dump(canvas_result.json_data["objects"], handle)
+#         with open('Data.pickle', 'wb') as handle:
+#             pickle.dump(canvas_result.json_data["objects"], handle)
 
     st.subheader("Algorithm Results")
     
