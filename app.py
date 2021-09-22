@@ -339,7 +339,7 @@ def fundus_demo(session_state):
             fig, ax = plt.subplots()
             ax.imshow(rgb2gray(cv2.imread(image_name)), cmap=plt.cm.gray)
             ax.plot(init[:, 1], init[:, 0], '--r', lw=3)
-            ax.plot(snake[:, 0], snake[:, 1], '-b', lw=3)
+            ax.plot(snake[:, 1], snake[:, 0], '-b', lw=3)
             ax.scatter(Points[:, 1], Points[:, 0], s=0.1)
             ax.set_xticks([]) 
             ax.set_yticks([])
@@ -350,8 +350,8 @@ def fundus_demo(session_state):
             Px = list(Points[:, 1])
             Py = list(Points[:, 0])
 
-            X1 = list(snake[:, 1])
-            X2 = list(snake[:, 0])
+            X1 = list(snake[:, 0])
+            X2 = list(snake[:, 1])
 
             data = np.array(list(zip(X2, X1)))
             xc_circle,yc_circle,radius,_ = cf.least_squares_circle((data))
