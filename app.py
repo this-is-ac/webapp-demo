@@ -405,8 +405,8 @@ def fundus_demo(session_state):
         st.success("Generated Intersection!")
 
         with st.spinner("Generating FRIFD Fit for Order 18"):
-            xn = np.append(snake[:,0],snake[0,0])
-            yn = np.append(snake[:,1],snake[0,1])
+            yn = np.append(snake[:,0],snake[0,0])
+            xn = np.append(snake[:,1],snake[0,1])
 
             xn = xn[0::6]
             yn = yn[0::6]
