@@ -374,6 +374,7 @@ def fundus_demo(session_state):
         st.success("Generated Circle and Ellipse Fits!")
 
         with st.spinner("Generating Intersetion"):
+            snake[:, 0], snake[:, 1] = snake[:, 1], snake[:, 0]
             p1 = Polygon(snake)
             p2 = Polygon(np.flip(Points))
             p2 = p2.buffer(2.0)
