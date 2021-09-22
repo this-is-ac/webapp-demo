@@ -166,8 +166,8 @@ def full_app(session_state):
         for col in objects.select_dtypes(include=['object']).columns:
                 objects[col] = objects[col].astype("str")
         st.dataframe(objects)
-#         with open('Data.pickle', 'wb') as handle:
-#             pickle.dump(canvas_result.json_data["objects"], handle)
+        with open('Data.pickle', 'wb') as handle:
+            pickle.dump(canvas_result.json_data["objects"], handle)
 
     st.subheader("Algorithm Results")
     
